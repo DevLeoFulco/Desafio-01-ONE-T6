@@ -12,6 +12,7 @@ paragrafo.innerHTML = 'Escolha um numero de 1 a 10';
 function escreverTextoNaTela(tag, texto){
     let elemento = document.querySelector(tag);
     elemento.innerHTML = texto;
+    responsiveVoice.speak(texto, "Brazilian Portuguese Female", {rate:1.2});
 }
 
 escreverTextoNaTela('h1', 'Jogo do numero secreto');
